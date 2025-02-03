@@ -1,86 +1,68 @@
-//Ejemplos
+size(600,500);
+background(69,121,81);
 
-// Escribir cosas en la consola
-//print("hola mundo");
+//Cuerpo
 
-// Para crear nuestro lienzo
-//size(500,800);
+fill(221,158,191);
+noStroke();
 
-// darle color al fondo del lienzo
-//background(0);
+translate(275,240);
+triangle(20,-120,120,140,-40,210);
 
-// Dibujar una linea
-//Line (0,0,200,200)
+triangle(-39,209,119,139,79,199);
 
-//EJERCICIO 1 
+triangle(78,198,-38,208,-38,233);
+triangle(-52,165,-32,168,23,-120);
 
-//print("hola mundo");
-//size(800,800);
-//background(60,160,240);
-//stroke(255);
-//strokeWeight(40);
-//line(500,200,50,200);
+triangle(-52,165,20,160,-40,210);
 
-//EJERCICIO 2
+//Pata
+rect(-38,211,-31, 22.7);
 
-//Variable tipo bool 
-//boolean z = true;
-//char h = 'h';
-//string hola = "hola";
-//float horas = 3.5;
-//int distancia = 10;
+triangle(8,209,-71,213.9,-50,200);
 
-//color RedColor = color(200,10,10)
+//cabeza
+rect(19.8,-120,-60,140);
+triangle(-40,-121,-130,-30,-38,20.8);
+rect(-13,150,-25,-170);
 
-// Se ejecuta 1 sola vez apenas inicia
-void setup() {
-  size(500,500);
-}
+//Nariz
+fill(0);
+circle(-147,-32,35);
 
-// Se ejecuta una vez por fotograma
-void draw() {
-  background(50,250,100);
-  
-//Translate(0,0); es para mover todo a un punto especifico (como si ese punto fuera 0)
-  translate (250,270);
-  
-  fill(#14D839);
-  ellipse(0,50,150,40);
-  
-  //Cuerpo
-  ellipse(0,0,100,100);
-  
-  //Manos
- ellipse(-50,25,30,50);
- ellipse(50,25,30,50);
- 
- //Ojos
- fill(255);
- ellipse(-30,-40,50,50);
- ellipse(30,-40,50,50);
- 
- fill(0);
- ellipse(-30,-40,30,30);
- ellipse(30,-40,30,30);
- 
- //Boca
- 
- //rectMode(CENTER); para poner algo en el centro 
- rectMode(CENTER);
- fill(255,0,0);
- rect(0,10,60,10);
- 
- //Contenedor
- fill(#72CAF5,100);
- ellipse(0,-10,195,195);
- 
- //Gotas en la frente
- //noStroke(); quitar las margenes
- noStroke();
- triangle(50,-80,65,-65,45,-75);
-  triangle(50,-70,65,-55,45,-65);
-  
- 
- 
- 
-}
+//bigotes
+triangle(-100,-110,-90,-100,-128,-45);
+triangle(-120,-90,-110,-100,-130,-45);
+
+triangle(-130,-20,-110,10,-100,12);
+triangle(-125,-20,-93,15,-75,16);
+
+fill(205,95,31);
+
+//Mejilla
+circle(-30,-21,50);
+
+fill(255);
+//ojos
+circle(-49,-73,35);
+
+fill(0);
+circle(-49,-73,20);
+
+
+fill(221,158,191);
+//Orejas
+triangle(24,-110,-15,-100,18,-190);
+triangle(-6,-110,-50,-100,-13,-190);
+
+fill(248,230,54);
+//nuez
+circle(-135,115,150);
+
+fill(221,158,191);
+//brazo
+circle(-30,75,38);
+circle(-55,75,38);
+circle(-75,75,38);
+
+rect(-72,56,90,38);
